@@ -103,7 +103,7 @@ end
 % Name
 %--------------------------------------------
 if auto == 0
-    name = inputdlg('Name Image:','Name Image',1,{IMG.name});
+    name = inputdlg('Name Image:','Name Image',[1 60],{IMG.name});
     name = cell2mat(name);
     if isempty(name)
         SCRPTipt = SCRPTipt0;
